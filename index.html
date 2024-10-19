@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dappr</title>
+    <script src="https://kit.fontawesome.com/30f213c528.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+        }
+        .nav-bar{
+            background-color: #6F6AF7;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 20px;
+            color: white;
+        }
+        .logo{
+            font-family: Delius Unicase;
+            font-size: 30px;
+            font-weight: bold;
+            font-weight: 700;
+        }
+        nav{
+            display: flex;
+        }
+        nav input{
+            margin-left: 1em;
+            /* width: 16em; */
+            border-radius: 1em;
+        }
+        nav ul{
+            display: flex;
+            /* flex-direction: row; */
+            list-style: none;
+            gap: 2em;
+        }
+        nav ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .first-container{
+            display: flex;
+            justify-content: space-around;
+            /* flex-direction: column; */
+            /* border: solid; */
+            padding: 1em;
+            margin: 2em;
+        }
+        .first-container textarea{
+            margin-top: 2em;
+            border-radius: 1em;
+            width: 100%; 
+            max-width: 650px; 
+            height: auto; 
+            background-color: #E5D8FF;
+            color: #3e4141;
+        }
+        .social-icon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: auto;
+            position: fixed;
+            top: 60px; 
+            right: 5px;
+            z-index: 1000;
+            
+            
+        }
+        .social-icon img{
+            padding: 3px;
+        }
+        
+        .second-container{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+        .card{
+            color: #fff;
+            height: 4em;
+            width: 17em;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .card1{
+        background-color: #929DFF;
+        }
+        .card2{
+            background-color: #734CF2;
+        }
+        .card3{
+            background-color: #D288FF;
+        }
+        .card4{
+            background-color: #000000;
+        }
+
+        .third-container{
+            background-color: #483EFF;
+            display: flex;
+            width: 90%;
+            justify-content: center;
+            margin-left: 75px;
+            margin-top: 9em;
+            border-radius: 1em;
+            height: 30em;
+        }
+        .buttons-container{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+        }
+        .buttons-container button{
+            border: solid #fff;
+            width: 50%;
+            color: #fff;
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            padding: 20px;
+            border-radius: 1em;
+            background-color: #483EFF;
+        }
+        #button1{
+            background-color: #BCE0F6;
+            color: #000000;
+        }
+        .info-container{
+            background-color: #fff;
+            margin: 20px;
+            height: auto;
+            width: 60%;
+            border: solid #000000;
+            padding: 40px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">DAPPR</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Information</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+            <input type="search" name="search" id="search" placeholder="Search">
+        </nav>
+        
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="main-container">
+
+        <div class="first-container">
+            <div class="Group1"><img src="../images/Group 1.png" alt="" height="500px" width="500px"></div>
+            <div class="textarea"><textarea name="" rows="28" cols="110">It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a ......</textarea></div>
+            <div class="social-icon">
+                <img src="../images/whatsapp-image.png" alt="" height="50px">
+                <img src="../images/facebook-image.png" alt="" height="50px">
+                <img src="../images/twitter-image.png" alt="" height="50px">
+            </div>
+        </div>
+
+        <div class="second-container">
+            <div class="card1 card">
+                <p>Total Question's</p>
+                <br>
+                <h2>2000,000</h2>
+            </div>
+            <div class="card2 card">
+                <p>Total Answer's</p>
+                <br>
+                <h2>105,000</h2>
+            </div>
+            <div class="card3 card">
+                <p>Participated</p>
+                <br>
+                <h2>10,000</h2>
+            </div>
+            <div class="card4 card">
+                <p>Total Passed</p>
+                <br>
+                <h2>6,000</h2>
+            </div>
+        </div>
+<br><br>
+        <div class="third-container">
+            <div class="buttons-container">
+                <button id="button1"><b>YOUR INFO</b></button>
+                <button><b>BOOKMARKS</b></button>
+                <button><b>SETTINGS</b></button>
+            </div>
+            <div class="info-container">
+                <h2 style="color: #04285A;">Your Information</h2><br>
+
+                <b style="color: #04285A;">Name:</b>
+                <label style="color: #143565;
+">Atul Singhal</label><br><br>
+
+                <b style="color: #04285A;">Email:</b>
+                <label style="color: #143565;
+">atul@gmail.com</label><br><br>
+
+                <b style="color: #04285A;">Phone:</b>
+                <label style="color: #143565;
+">+91 1234567890</label><br><br>
+
+                <b style="color: #04285A;">Marks:</b>
+                <label style="color: #143565;
+">500.00</label><br><br>
+            </div>
+        </div>
+        <br><br>
+
+    </div>
+    
+</body>
+</html>
